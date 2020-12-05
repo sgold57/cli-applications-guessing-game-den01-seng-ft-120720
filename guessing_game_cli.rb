@@ -30,7 +30,7 @@ end
 
 def run_guessing_game
   cpu_guess = store_number
-  input = gets
+  input = gets.chomp
   if input == cpu_guess.to_s
     correct_guess
   elsif input == 'exit'

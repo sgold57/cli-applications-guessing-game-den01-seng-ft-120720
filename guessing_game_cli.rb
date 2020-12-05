@@ -26,7 +26,7 @@ def user_guess
   user_prompt
   user_choice = gets.chomp
 end
-  
+
 
 def run_guessing_game
   cpu_guess = store_number

@@ -30,12 +30,10 @@ end
 
 def run_guessing_game
   cpu_guess = store_number
-  binding.pry
-  if user_guess == cpu_guess.to_s
-    binding.pry
+  guess = user_guess
+  if guess == cpu_guess.to_s
     correct_guess
-  elsif user_guess == 'exit'
-    binding.pry
+  elsif guess == 'exit'
     exit_guess
   else
     incorrect_guess(cpu_guess)
